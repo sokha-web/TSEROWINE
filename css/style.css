@@ -1,6 +1,8 @@
 .img{
-	width: 1680px;
-	height: 974px;
+    max-width: 1680px;
+    width:100%;
+    background-size: 1680px;
+    height: 974px;
 }
 .div1{
 	position: relative;
@@ -44,8 +46,14 @@
 	padding-top: 20px;
 	opacity: 100%;
 }
+.p1:hover{
+	background-color: #9A1C42;
+	width: 250px;
+	height: 100px;
+	opacity: 100%;
+	color: white;
+}
 .box{
-	position: relative;
 	border: 2px solid;
 	width: 250px;
 	height: 100px;
@@ -91,13 +99,14 @@
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	padding-right: 30px;
+	transition: width 2s linear 1s;
 }
 a{
 	color: white;
 }
 .in{
-	width: 100%;
-	height: 1500px;
+    max-width: 1680px;
+    width:100%;
 	position: absolute;
 }
 .is{
@@ -158,8 +167,8 @@ a{
 	vertical-align: middle;
 }
 .back{
-	width: 100%;
-	height: 3000px;
+    max-width: 1680px;
+    width:100%;
 	position: absolute;
 }
 .is{
@@ -215,8 +224,8 @@ a{
 	padding-top: 60px;
 }
 .back2{
-	width: 100%;
-	height: 100%;
+	max-width: 1680px;
+    width:100%;
 	position: absolute;
 }
 .ira{
@@ -225,6 +234,7 @@ a{
 	padding-left: 50px;
 	width: 560px;
 	height: 460px;
+ 
 
 }
 .box7{
@@ -332,4 +342,43 @@ a{
 	opacity: relative;
 	float: right;
 	margin-right: 40px;
+}
+@media only screen and (max-width:1173px){
+	.p{
+    padding-left:  50%;
+    padding-right:  50%;
+
+	}
+}
+@media only screen and (max-width:1173px){
+	.box
+	.p1
+	.h{
+	padding-left: 50%;
+	}
+}
+.toggle-button{
+	top: .75rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+	float: right;
+}
+.toggle-button
+.bar{
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+@media (max-width: 1440px){
+	.toggle-button{
+		display: flex;
+	}
+	.uli{
+		display: none;
+	}
 }
